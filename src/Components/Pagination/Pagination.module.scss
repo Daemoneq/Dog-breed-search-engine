@@ -1,0 +1,35 @@
+@import '../../Assets/var&colors';
+
+.pagination{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    z-index: -4;
+
+    &__paginationNumbers{
+        display: flex;
+    }
+
+    &__listElement{
+        background-color: transparent;
+    }
+
+    &__paginationButton{
+        font-size: .7rem;
+        margin: 5px;
+        color: $fontColor;
+    }
+
+    &__navButton{
+        height: 20px;
+        width: 20px;
+        margin: 0 3px;
+        border: none;
+        cursor: pointer;
+        background-color: $pagginationBtnColor;
+        outline: none;
+        @include flexCenter;
+    }
+}

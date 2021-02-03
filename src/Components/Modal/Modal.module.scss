@@ -1,0 +1,19 @@
+@import '../../Assets/var&colors';
+
+.backdrop{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__modal{
+        height: 300px;
+        width: 300px;
+        background-color: $secondaryColor;
+        @include flexCenter();
+    border: 4px black solid;
+    }
+}

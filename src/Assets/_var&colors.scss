@@ -1,0 +1,40 @@
+$backgroundColor: #ffcdab;
+$defaultColor: #333;
+$secondaryColor: #ffcdab;
+$hintElementsColor: #fff;
+$sideMenuColor: #4d4b4b;
+$fontColor: #333;
+$pagginationBtnColor: #333;
+$tileColor: #ffcdab;
+
+// #ffcdab
+// #cabbe9
+
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexAlignItems($align-items){
+    display: flex;
+    justify-content: center;
+    align-items: $align-items;
+}
+
+@mixin flexJustifyContent($justify-content){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+}
+
+@mixin navButtonsInHeader(){
+    margin: 0 20px 0 0;
+    height: 5vh;
+    width: 5vh;
+    // border-radius: 50px;
+    background-color: $backgroundColor;
+    @include flexCenter;
+    position: relative;
+    cursor: pointer;
+}

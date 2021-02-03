@@ -1,0 +1,35 @@
+@import '../../Assets/var&colors';
+
+.Main{
+    height: 72%;
+    width: 100%;
+    z-index: -4;
+    align-items: center;
+    border-bottom: black 2px solid;
+    padding: 5px 10px;
+    overflow: scroll;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255, .7),
+        rgba(255,255,255, .3)
+    );
+    @include flexCenter;
+    &__wrapper{
+        height: 100%;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 400px){
+    .Main{
+        justify-self: center;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: 130px 130px ;
+        overflow: auto;
+    }
+}

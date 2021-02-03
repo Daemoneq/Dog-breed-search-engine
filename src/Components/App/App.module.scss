@@ -1,0 +1,23 @@
+@import '../../Assets/var&colors';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+.App{
+    height: 100vh;
+    width: 100vw;
+    background-color: $backgroundColor;
+    position: absolute;
+    z-index: -100;
+    top: 0; left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,32 @@
+@import '../../../../Assets/var&colors';
+
+.Tile{
+    justify-self: center;
+    height: 120px;
+    width: 100px;
+    background-color: $tileColor;
+    margin: 10px;
+    padding: 10px 0 0 0;
+    @include flexCenter();
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    //HERE
+    border: 1px #333 solid;
+
+    &__breedName{
+        font-size: .4rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    &__img{
+        height: 80px;
+        width: 80px;
+    // border: 1px #333 solid;
+
+        // margin: 0 0 5px 0;
+       
+    }
+}

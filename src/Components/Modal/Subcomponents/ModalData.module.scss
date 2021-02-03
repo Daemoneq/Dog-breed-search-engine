@@ -1,0 +1,61 @@
+@import '../../../Assets/var&colors';
+
+.modalData{
+    font-size: .5rem;
+    // background-color: #f ff;
+    height: 90%;
+    width: 90%;
+    @include flexCenter;
+    flex-direction: column;
+
+    &__name{
+        font-size: .5rem;
+        margin: 0 0 10px 0;
+        font-weight: bold;
+        @include flexAlignItems(flex-start);
+        width: 80%;
+        height: 30px;
+        border-bottom: 2px black solid;
+    }
+
+    &__img{
+        height: 110px;
+        margin: 0 0 10px 0;
+    }
+
+    &__infoContainer{
+        height: 50%;
+        width: 100%;
+        // border: 1px black solid;
+        margin: 5px 0 0 0; 
+        @include flexCenter;
+    }
+
+    &__infoLeftSide{
+        height: 100%;
+        width: 50%;
+        border-right: 1px black solid;
+        border-top: 2px black solid;
+        @include flexAlignItems(flex-start);
+        flex-direction: column;
+        padding: 5px 0 0 0;
+    }
+
+    &__infoRightSide{
+        height: 100%;
+        width: 50%;
+        border-left: 1px black solid;
+        border-top: 2px black solid;
+        @include flexAlignItems(center);
+        flex-direction: column;
+    }
+
+    &__infoTextTitle{
+        font-size: .4rem;
+    }
+
+    &__infoText{
+        font-size: .4rem;
+        margin: 5px;
+    }
+}

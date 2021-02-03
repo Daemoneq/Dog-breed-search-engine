@@ -1,0 +1,18 @@
+@import '../../../../../../Assets/var&colors';
+
+.hintElement{
+    background-color: $hintElementsColor;
+    border: 1px solid black;
+    list-style-type: none;
+    font-size: .5rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+// .hintElement:first-child{
+//     border-radius: 10px 10px 0 0;
+// }
+
+// .hintElement:last-child{
+//     border-radius: 0 0 10px 10px;
+// }

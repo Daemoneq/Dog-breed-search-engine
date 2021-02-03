@@ -1,0 +1,12 @@
+@import '../../Assets/var&colors';
+
+.Footer{
+    height: 5%;
+    width: 100vw;
+    background-color: $defaultColor;
+    position: relative;
+    bottom: 0px;
+    font-size: .2rem;
+    color: $secondaryColor;
+    @include flexCenter;
+}

@@ -1,0 +1,38 @@
+@import '../../../../Assets/var&colors';
+
+.searchInput{
+    background-color: transparent;
+    position: relative;
+    &__button{
+        @include navButtonsInHeader;
+    }
+
+    &__input{
+        right: 55%;
+        position: absolute;
+        top: 10%;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 4vh;
+        width: 150px;
+        z-index: -1;
+        // border-radius: 50px;
+        transition: .4s ease-in;
+        transform-origin: 100% 50%;
+        transform: scaleX(.1);
+        font-size: .5rem;
+        padding: 0 0 0px 10px;
+        outline: none;
+    }
+
+    &__hintsList{
+        display: none;
+        position: absolute;
+        width:150px;
+        height: 100px;
+        overflow-y: auto;
+        right: 30px;
+        height: 200px;
+        // border-radius: 10px;    
+    }
+}

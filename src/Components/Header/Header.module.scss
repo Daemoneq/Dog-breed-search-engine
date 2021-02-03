@@ -1,0 +1,22 @@
+@import '../../Assets/var&colors';
+
+.header{
+    height: 7%;
+    width: 100%;
+    margin: 30px 0 0 0;
+    background-color: $defaultColor;
+    @include flexJustifyContent(space-between); 
+    padding: 0 10px 0 30px;
+    position: relative;
+    z-index: -2;
+
+    &__logo{
+        color: $secondaryColor;
+        cursor: pointer;
+    }
+
+    &__navButtonsPlace{
+        @include flexCenter;
+    }
+
+}
